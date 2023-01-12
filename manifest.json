@@ -1,14 +1,12 @@
 {
   "manifest_version": 3,
-  "name": "Prove You Need It",
+  "name": "How Badly Do You Want That?",
   "description": "An extension to ensure you don't buy things on Amazon unless you REALLY want them.",
   "version": "1.0.0",
 
-  "default_locale": "en",
-
   "content_scripts": [
     {
-      "js": ["main.js"],
+      "js": ["main.js", "jquery-3.6.3.min.js"],
       "matches": ["https://www.amazon.com/*", "https://amazon.com/*"]
     }
   ]
